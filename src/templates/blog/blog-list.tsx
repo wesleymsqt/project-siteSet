@@ -59,7 +59,6 @@ export function BlogList() {
       )}
 
       {/* Fallback */}
-      
       {!hasPosts && (
         <div className="container px-8">
           <div className="flex flex-col items-center justify-center gap-8 border-dashed border-2 border-gray-300 p-8 md:p-12 rounded-lg">
