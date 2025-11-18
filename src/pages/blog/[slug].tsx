@@ -1,4 +1,8 @@
-import { Avatar } from "@/components/avatar";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
+import { allPosts } from "contentlayer/generated";
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,17 +10,17 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { allPosts } from "contentlayer/generated";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+
+import { Avatar } from "@/components/avatar";
 
 export default function PostPage() {
   const router = useRouter();
   const slug = router.query.slug as string;
   const post = allPosts.find(
-    (post) => post.slug.toLowerCase() === slug.toLowerCase()
+    (post) => post.slug.toLowerCase() === slug?.toLowerCase()
   )!;
+
+  if (!post) return null;
 
   const publishedDate = new Date(post?.date).toLocaleDateString("pt-BR", {
     day: "2-digit",
