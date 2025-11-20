@@ -1,40 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Site.Set
 
-## Getting Started
+![Project Banner](https://rocketseat-nextjs-fundamentals.vercel.app/og-image.jpg) 
+> **Venda seus produtos como afiliado em um único lugar.**
 
-First, run the development server:
+O **Site.Set** é uma plataforma moderna desenvolvida com as tecnologias mais recentes do ecossistema React. Focado em alta performance, SEO otimizado e experiência de usuário fluida, o projeto serve como um hub central para afiliados gerenciarem e divulgarem seus produtos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este projeto foi desenvolvido utilizando o que há de mais moderno no desenvolvimento web:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+* **[Next.js 15](https://nextjs.org/)** - Framework React com App Router e Server Components.
+* **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática para um código mais seguro.
+* **[Tailwind CSS](https://tailwindcss.com/)** - Estilização utilitária e responsiva.
+* **[Contentlayer](https://contentlayer.dev/)** - Gestão de conteúdo (Blog) baseada em arquivos MDX.
+* **[Lucide React](https://lucide.dev/)** - Biblioteca de ícones leve e consistente.
+* **[Shadcn UI](https://ui.shadcn.com/)** - Componentes de interface reutilizáveis e acessíveis.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## ✨ Funcionalidades
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+* **Blog Estático & Dinâmico:** Sistema de blog alimentado por Contentlayer com páginas geradas estaticamente para máxima velocidade.
+* **SEO Avançado:**
+    * Metadados dinâmicos para cada post e página.
+    * Configuração completa de Open Graph para redes sociais.
+* **UX Aprimorada:**
+    * **Custom 404:** Página de "Não encontrado" estilizada e interativa.
+    * **Error Boundaries:** Tratamento de erros elegante com opção de "Tentar novamente".
+    * **Loading States:** Indicadores de carregamento animados e personalizados.
+* **Compartilhamento Social:** Componente integrado para compartilhar posts facilmente.
+* **Design Responsivo:** Layout adaptável para mobile, tablet e desktop.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Instalação e Uso
 
-## Learn More
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/site-set.git](https://github.com/seu-usuario/site-set.git)
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    pnpm install
+    # ou
+    yarn install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+3.  **Configure as variáveis de ambiente:**
+    Renomeie o arquivo `.env.example` para `.env.local` e preencha as variáveis necessárias (se houver).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  **Execute o projeto:**
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+5.  **Acesse:**
+    Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Estrutura do Projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+* `/app`: Rotas e páginas do Next.js (App Router).
+* `/components`: Componentes reutilizáveis (UI, botões, inputs).
+* `/content`: Arquivos Markdown/MDX dos posts do blog.
+* `/hooks`: Hooks personalizados (ex: `useShare`).
+* `/templates`: Layouts de páginas para separar lógica de visualização.
+* `/lib` ou `/utils`: Funções utilitárias.
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um Pull Request.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Feito com 💜 por Wesley Mesquita
