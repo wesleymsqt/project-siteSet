@@ -5,8 +5,8 @@ import { notFound } from "next/navigation";
 type BlogPostPage = {
   params: Promise<{
     slug: string;
-  }>
-}
+  }>;
+};
 
 export default async function BlogPostPage({ params }: BlogPostPage) {
   const { slug } = await params;
@@ -16,7 +16,5 @@ export default async function BlogPostPage({ params }: BlogPostPage) {
     notFound();
   }
 
-  return (
-    <PostPage post={post} />
-  )
+  return <PostPage post={post} />;
 }

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Site.Set",
     description: "Venda seus produtos como afiliado em um único lugar",
-    url: "https://rocketseat-nextjs-fundamentals.vercel.app/og-image.jpg",
+    url: "https://rocketseat-nextjs-fundamentals.vercel.app/og-image.png",
     siteName: "Site.Set",
     locale: "pt_BR",
     type: "website",
