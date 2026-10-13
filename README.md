@@ -1,4 +1,9 @@
+# Site.Set
 
+![Project Banner](https://rocketseat-nextjs-fundamentals.vercel.app/og-image.jpg) 
+> **Venda seus produtos como afiliado em um único lugar.**
+
+O **Site.Set** é uma plataforma moderna desenvolvida com as tecnologias mais recentes do ecossistema React. Focado em alta performance, SEO otimizado e experiência de usuário fluida, o projeto serve como um hub central para afiliados gerenciarem e divulgarem seus produtos.
 
 ## 🚀 Tecnologias
 
