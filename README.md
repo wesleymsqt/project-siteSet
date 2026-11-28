@@ -1,8 +1,5 @@
 # Affiliate Hub
 
-![Project Banner](https://rocketseat-nextjs-fundamentals.vercel.app/og-image.jpg) 
-> **Venda seus produtos como afiliado em um único lugar.**
-
 O **Affiliate Hub** é uma plataforma moderna desenvolvida com as tecnologias mais recentes do ecossistema React. Focado em alta performance, SEO otimizado e experiência de usuário fluida, o projeto serve como um hub central para afiliados gerenciarem e divulgarem seus produtos.
 
 ## 🚀 Tecnologias
@@ -55,15 +52,6 @@ Este projeto foi desenvolvido utilizando o que há de mais moderno no desenvolvi
 
 5.  **Acesse:**
     Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
-
-## 📂 Estrutura do Projeto
-
-* `/app`: Rotas e páginas do Next.js (App Router).
-* `/components`: Componentes reutilizáveis (UI, botões, inputs).
-* `/content`: Arquivos Markdown/MDX dos posts do blog.
-* `/hooks`: Hooks personalizados (ex: `useShare`).
-* `/templates`: Layouts de páginas para separar lógica de visualização.
-* `/lib` ou `/utils`: Funções utilitárias.
 
 ## 🤝 Contribuição
 
