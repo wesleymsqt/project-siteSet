@@ -3,7 +3,7 @@
 import { Search } from "@/components/search";
 import { PostCard } from "./components/post-card";
 import { PostGridCard } from "./components/post-grid-card";
-import { Post } from ".contentlayer/generated";
+import type { Post } from "@/lib/posts";
 import { Inbox } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 
@@ -49,7 +49,7 @@ export function BlogList({ posts }: BlogListProps) {
         <PostGridCard>
           {postsList.map((post) => (
             <PostCard
-              key={post._id}
+              key={post.slug}
               title={post.title}
               description={post.description}
               date={new Date(post.date).toLocaleDateString("pt-BR")}

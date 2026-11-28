@@ -9,16 +9,16 @@ O **Site.Set** é uma plataforma moderna desenvolvida com as tecnologias mais re
 
 Este projeto foi desenvolvido utilizando o que há de mais moderno no desenvolvimento web:
 
-* **[Next.js 15](https://nextjs.org/)** - Framework React com App Router e Server Components.
+* **[Next.js 16](https://nextjs.org/)** - Framework React com App Router e Server Components.
 * **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática para um código mais seguro.
 * **[Tailwind CSS](https://tailwindcss.com/)** - Estilização utilitária e responsiva.
-* **[Contentlayer](https://contentlayer.dev/)** - Gestão de conteúdo (Blog) baseada em arquivos MDX.
+* **Markdown e gray-matter** - Posts do blog em arquivos Markdown com metadados YAML validados durante a leitura.
 * **[Lucide React](https://lucide.dev/)** - Biblioteca de ícones leve e consistente.
 * **[Shadcn UI](https://ui.shadcn.com/)** - Componentes de interface reutilizáveis e acessíveis.
 
 ## ✨ Funcionalidades
 
-* **Blog Estático & Dinâmico:** Sistema de blog alimentado por Contentlayer com páginas geradas estaticamente para máxima velocidade.
+* **Blog Estático & Dinâmico:** Posts Markdown carregados no servidor e páginas geradas estaticamente para máxima velocidade.
 * **SEO Avançado:**
     * Metadados dinâmicos para cada post e página.
     * Configuração completa de Open Graph para redes sociais.

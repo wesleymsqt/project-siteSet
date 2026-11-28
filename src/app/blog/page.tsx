@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { BlogList } from "@/templates/blog";
-import { allPosts } from "contentlayer/generated";
+import { allPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Blog",

@@ -1,5 +1,5 @@
 import { BlogList, type BlogListProps } from "@/templates/blog";
-import { allPosts } from "contentlayer/generated";
+import { allPosts } from "@/lib/posts";
 import type { GetStaticProps } from "next";
 
 export default function BlogPage({ posts }: BlogListProps) {
