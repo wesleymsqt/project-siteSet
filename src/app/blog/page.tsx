@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: "Dicas e estratégias para impulsionar seu negócio",
   robots: "index, follow",
   openGraph: {
-    title: "Site.Set",
+    title: "Affiliate Hub",
     description: "Dicas e estratégias para impulsionar seu negócio",
     url: "https://rocketseat-nextjs-fundamentals.vercel.app/og-image.png",
-    siteName: "Site.Set",
+    siteName: "Affiliate Hub",
     locale: "pt_BR",
     type: "website",
     images: [

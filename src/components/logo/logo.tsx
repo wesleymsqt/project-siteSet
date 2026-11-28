@@ -3,14 +3,19 @@ import Link from "next/link";
 
 export const Logo = () => {
   return (
-    <footer className="border-t border-white/10 dark">
-      <div className="mx-auto max-2-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex md:flex-row justify-between gap-8 py-8">
-          <Link href={"/"} title="Pagina inicial">
-            <Image src="/logo.svg" alt="Logo site" width={116} height={32} />
-          </Link>
-        </div>
-      </div>
-    </footer>
+    <Link
+      href="/"
+      title="Affiliate Hub - página inicial"
+      className="inline-flex items-center gap-2 text-lg font-semibold text-white"
+    >
+      <Image
+        src="/affiliate-hub-mark.svg"
+        alt=""
+        width={32}
+        height={33}
+        className="h-auto w-8"
+      />
+      <span>Affiliate Hub</span>
+    </Link>
   );
 };

@@ -45,7 +45,7 @@ export const HeroSection = () => {
         <div className="relative hidden h-full w-full items-center justify-center md:flex">
           <Image
             src="/assets/landing-page/hero-section.svg"
-            alt="Ilustração da plataforma Site.Set"
+            alt="Ilustração da plataforma Affiliate Hub"
             width={600}
             height={600}
             className="h-full w-auto object-contain"

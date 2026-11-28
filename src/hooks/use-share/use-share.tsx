@@ -33,8 +33,12 @@ export const useShare = ({
   const share = useCallback(
     async (provider: SocialProvider | "clipboard") => {
       try {
+        const absoluteUrl = url
+          ? new URL(url, window.location.origin).toString()
+          : "";
+
         if (provider === "clipboard") {
-          return await handleCopy(url ?? "");
+          return await handleCopy(absoluteUrl);
         }
 
         const providerConfig = SOCIAL_PROVIDERS[provider];
@@ -42,7 +46,10 @@ export const useShare = ({
           throw new Error(`Provider não suportado: ${provider}`);
         }
 
-        const shareUrl = providerConfig.shareUrl(shareConfig);
+        const shareUrl = providerConfig.shareUrl({
+          ...shareConfig,
+          url: absoluteUrl,
+        });
 
         const shareWindow = window.open(
           shareUrl,

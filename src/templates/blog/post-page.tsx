@@ -27,7 +27,7 @@ export const PostPage = ({ post }: PostPageProps) => {
     year: "numeric",
   });
 
-  const postUrl = `https://site.set/blog/${post.slug}`;
+  const postUrl = `/blog/${post.slug}`;
 
   return (
     <main className="py-20 text-gray-100">
